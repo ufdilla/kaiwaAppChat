@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/focus1"
+    android:background="@drawable/ombre3"
     tools:context="com.example.easysoft.kaiwaapp.PrivateActivity">
 
 </android.support.constraint.ConstraintLayout>
