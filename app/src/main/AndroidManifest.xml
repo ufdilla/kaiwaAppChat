@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".GroupActivity" />
-        <activity android:name=".PrivateActivity"></activity>
+        <activity android:name=".PrivateActivity" />
+        <activity android:name=".ConnectorActivity"></activity>
     </application>
 
 </manifest>
