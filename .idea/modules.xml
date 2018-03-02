@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/KaiwaApp.iml" filepath="$PROJECT_DIR$/KaiwaApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kaiwaAppChat.iml" filepath="$PROJECT_DIR$/kaiwaAppChat.iml" />
     </modules>
   </component>
 </project>
