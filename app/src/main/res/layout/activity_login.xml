@@ -23,7 +23,7 @@
             android:id="@+id/login_button"
             android:layout_gravity="center"
             android:text="Sign in"
-            android:shadowColor="@color/colorShadow"
+            android:background="#B0B0B0"
             android:onClick="click_button_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
