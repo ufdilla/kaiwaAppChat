@@ -31,7 +31,6 @@ public class ConnectorActivity extends AsyncTask<Void, Void, Void> {
 
     @Override
     protected Void doInBackground(Void... voids) {
-
         try {
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
             JSONObject jObj = new JSONObject();

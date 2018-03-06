@@ -7,31 +7,19 @@ import java.io.Serializable;
  */
 
 public class ContactModel {
-    String Description;
-    String title;
-    int imgResId;
+    String Contact;
+//
+//    public int getCount() {
+//    return ContactModel.size();
+//    }
 
-    public String getDescription() {
-        return Description;
+
+    public String getContact() {
+        return Contact;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        Contact = Contact;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public int getImgResId() {
-        return imgResId;
-    }
-
-    public void setImgResId(int imgResId) {
-        this.imgResId = imgResId;
-    }
 }

@@ -8,14 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
+public class ContactAdapter extends BaseAdapter{
 
-public class ContactAdapter extends BaseAdapter {
-
-    ArrayList myList = new ArrayList();
+    ArrayList<ContactModel> myList = new ArrayList();
     LayoutInflater inflater;
     Context context;
 
@@ -33,7 +33,7 @@ public class ContactAdapter extends BaseAdapter {
 
     @Override
     public ContactModel getItem(int position) {
-        return (ContactModel) myList.get(position);
+        return myList.get(position);
     }
 
     @Override
@@ -55,22 +55,21 @@ public class ContactAdapter extends BaseAdapter {
 
         ContactModel currentListData = getItem(position);
 
-        mViewHolder.tvTitle.setText(currentListData.getTitle());
-        mViewHolder.tvDesc.setText(currentListData.getDescription());
+//        mViewHolder.tvTitle.setText(currentListData.getTitle());
+        mViewHolder.tvDesc.setText(currentListData.getContact());
 //        mViewHolder.ivIcon.setImageResource(currentListData.getImgResId());
 
         return convertView;
     }
 
     private class MyViewHolder {
-        TextView tvTitle, tvDesc;
+        TextView /*tvTitle,*/ tvDesc;
 //        ImageView ivIcon;
 
         public MyViewHolder(View item) {
-            tvTitle = (TextView) item.findViewById(R.id.tvTitle);
+//            tvTitle = (TextView) item.findViewById(R.id.tvTitle);
             tvDesc = (TextView) item.findViewById(R.id.tvDesc);
 //            ivIcon = (ImageView) item.findViewById(R.id.ivIcon);
         }
     }
-
 }

@@ -1,10 +1,6 @@
 package com.example.easysoft.kaiwaapp;
 import java.io.Serializable;
 
-/**
- * Created by easysoft on 2/27/18.
- */
-
 public class myModel implements Serializable{
     String nama;
 

@@ -37,7 +37,6 @@ public class LoginActivity extends Activity {
         btnLogin = findViewById(R.id.login_button);
         list = new ArrayList<>();
 
-
         btnLogin.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -53,13 +52,11 @@ public class LoginActivity extends Activity {
             startActivity(i);
             }
         });
-
     }
 
     public void click_button_login(View view){
 
     }
-
 
     public static void setSocket(Socket _socket) {
         LoginActivity.socket = _socket;
