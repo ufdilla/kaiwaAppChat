@@ -16,17 +16,17 @@ import java.net.UnknownHostException;
 public class ConnectorActivity extends AsyncTask<Void, Void, Void> {
 
     TextView textResponse1;
-//    String textDestination;
-//    String username;
+    String textDestination;
+    String username;
     String textRequest;
     String message = "";
     Socket socket;
-//    myModel model;
+    myModel model;
 
-    public ConnectorActivity(Socket socket, String textRequest, TextView textViewResponse) {
+    public ConnectorActivity(Socket socket, String textRequest, TextView textResponse1) {
         this.socket = socket;
         this.textRequest = textRequest;
-        this.textResponse1= textViewResponse;
+        this.textResponse1= textResponse1;
     }
 
     @Override

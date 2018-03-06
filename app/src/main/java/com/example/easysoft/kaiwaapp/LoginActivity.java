@@ -1,5 +1,6 @@
 package com.example.easysoft.kaiwaapp;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +19,7 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends Activity {
 
     private static Socket socket = null;
     private static final String TAG = "Client";
@@ -41,15 +42,15 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                username = ((EditText) findViewById(R.id.username)).getText().toString();
-                Intent i = new Intent(LoginActivity.this, MainActivity.class);
-                new Thread(new LoginThread()).start();
-                model = new myModel();
-                model.setNama(username);
-                list.add(model);
+            username = ((EditText) findViewById(R.id.username)).getText().toString();
+            Intent i = new Intent(LoginActivity.this, MainActivity.class);
+            new Thread(new LoginThread()).start();
+            model = new myModel();
+            model.setNama(username);
+            list.add(model);
 
-                i.putExtra(MainActivity.KEY_ITEM, model);
-                startActivity(i);
+            i.putExtra(MainActivity.KEY_ITEM, model);
+            startActivity(i);
             }
         });
 
